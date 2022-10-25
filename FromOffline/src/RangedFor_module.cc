@@ -10,7 +10,7 @@
 #include "art/Framework/Principal/Event.h"
 
 // Mu2e includes.
-#include "Offline/Sandbox/inc/TracerProduct.hh"
+#include "Sandbox/FromOffline/inc/TracerProduct.hh"
 
 #include <iostream>
 

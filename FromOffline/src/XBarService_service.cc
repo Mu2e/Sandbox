@@ -10,8 +10,8 @@
 // C++ include files
 #include <iostream>
 
-#include "Offline/Sandbox/inc/XBarService.hh"
-#include "Offline/Sandbox/inc/FooService.hh"
+#include "Sandbox/FromOffline/inc/XBarService.hh"
+#include "Sandbox/FromOffline/inc/FooService.hh"
 
 // Framework include files
 #include "canvas/Persistency/Provenance/RunID.h"

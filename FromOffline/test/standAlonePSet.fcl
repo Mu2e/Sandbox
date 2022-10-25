@@ -20,7 +20,7 @@ physics : {
   analyzers : {
     pSetTest : {
       module_type : StandAloneParameterSet
-      psetFile    : "Offline/Sandbox/test/example.fcl"
+      psetFile    : "Sandbox/FromOffline/test/example.fcl"
     }
   }
 

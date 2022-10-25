@@ -13,7 +13,7 @@
 #include "messagefacility/MessageLogger/MessageLogger.h"
 
 // Mu2e includes.
-#include "Offline/Sandbox/inc/TracerProductCollection.hh"
+#include "Sandbox/FromOffline/inc/TracerProductCollection.hh"
 
 // C++ includes
 #include <memory>

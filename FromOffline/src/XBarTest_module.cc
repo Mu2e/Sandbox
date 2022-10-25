@@ -5,7 +5,7 @@
 // Contact person Rob Kutschke
 //
 
-#include "Offline/Sandbox/inc/XBarService.hh"
+#include "Sandbox/FromOffline/inc/XBarService.hh"
 
 // Framework includes.
 #include "art/Framework/Core/EDAnalyzer.h"

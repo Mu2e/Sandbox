@@ -1,0 +1,11 @@
+*~
+\#*
+.sconsign.dblite
+*.root
+*.art
+*.log
+*.log*
+*.pdf
+*.pyc
+.clangd/*
+compile_commands.json
