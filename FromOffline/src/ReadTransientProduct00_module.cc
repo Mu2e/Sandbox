@@ -14,7 +14,7 @@
 
 // Mu2e includes.
 #include "Offline/RecoDataProducts/inc/StrawHit.hh"
-#include "Offline/Sandbox/inc/TransientProduct00Collection.hh"
+#include "Sandbox/FromOffline/inc/TransientProduct00Collection.hh"
 
 using namespace std;
 

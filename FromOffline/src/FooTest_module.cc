@@ -5,7 +5,7 @@
 // Contact person Rob Kutschke
 //
 
-#include "Offline/Sandbox/inc/FooService.hh"
+#include "Sandbox/FromOffline/inc/FooService.hh"
 
 // Framework includes.
 #include "art/Framework/Core/EDAnalyzer.h"

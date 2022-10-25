@@ -8,7 +8,7 @@
 //
 
 #include "Offline/GeneralUtilities/inc/OwningPointerCollection.hh"
-#include "Offline/Sandbox/inc/TracerProduct.hh"
+#include "Sandbox/FromOffline/inc/TracerProduct.hh"
 
 namespace mu2e {
 

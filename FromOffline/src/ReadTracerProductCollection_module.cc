@@ -1,12 +1,13 @@
 //
-// Plugin to readback the std::vector<TracerProduct>.
+// Plugin to readback the TracerProductCollection
 //
 //
 // Original author Rob Kutschke.
 //
 
 // Mu2e includes.
-#include "Offline/Sandbox/inc/TracerProduct.hh"
+#include "Sandbox/FromOffline/inc/TracerProduct.hh"
+#include "Sandbox/FromOffline/inc/TracerProductCollection.hh"
 
 // Framework includes.
 #include "art/Framework/Core/EDAnalyzer.h"
@@ -16,8 +17,6 @@
 #include "messagefacility/MessageLogger/MessageLogger.h"
 
 // C++ includes.
-#include <iostream>
-#include <vector>
 
 using namespace std;
 
@@ -28,7 +27,7 @@ namespace mu2e {
   //
   class ReadVectorTracerProduct00 : public art::EDAnalyzer {
   public:
-    explicit ReadVectorTracerProduct00(fhicl::ParameterSet const& );
+    explicit ReadVectorTracerProduct00(fhicl::ParameterSet const& pset );
     virtual ~ReadVectorTracerProduct00() { }
 
     void analyze( art::Event const& e);
@@ -41,20 +40,16 @@ namespace mu2e {
     : art::EDAnalyzer(pset){
   }
 
-
   void
   ReadVectorTracerProduct00::analyze(art::Event const& event) {
 
-    art::Handle<std::vector<TracerProduct> > tpHandle;
+    art::Handle<TracerProductCollection> tpHandle;
     event.getByLabel("tracerTest",tpHandle);
-
-    if ( !tpHandle.isValid() ){
-      cout << "Cannot find std::vector<TracerProduct> in the event." << endl;
-    }
-    std::vector<TracerProduct> const& prod = *tpHandle;
+    TracerProductCollection const& prod = *tpHandle;
 
     for ( size_t i=0; i<prod.size(); ++i){
-      mf::LogVerbatim("Tracing") << "      ReadVectorTracerProduct00:analyze: " << prod.at(i);
+      TracerProduct const& p = prod.at(i);
+      mf::LogVerbatim("Tracing") << "      ReadVectorTracerProduct00:analyze: " << p << endl;
     }
 
   } // end of ::analyze.

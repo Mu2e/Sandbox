@@ -11,7 +11,7 @@
 
 #include <vector>
 
-#include "Offline/Sandbox/inc/TransientProduct00.hh"
+#include "Sandbox/FromOffline/inc/TransientProduct00.hh"
 
 namespace mu2e {
    typedef std::vector<mu2e::TransientProduct00> TransientProduct00Collection;
