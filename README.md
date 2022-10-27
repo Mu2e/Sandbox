@@ -38,6 +38,4 @@ rm -rf Sandbox
    ```
    brew install git-filter-repo
    ```
-6. There was an unexpected detail when changing the names of the libraries in the link lists in the SConscript file: muse decided to name
-   the libraries that it created as ```libsandboxFromOffline_*```; I had expected ```libsandbox_FromOffline_*```; note the missing underscore.
- 
+6. The above procedure left the MDC218 and Mu2eII_SM21 branches in place.  I removed them using the GitHub web interface.
