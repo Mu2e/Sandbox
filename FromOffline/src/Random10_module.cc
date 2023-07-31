@@ -55,4 +55,4 @@ void mu2e::Random10::analyze( art::Event const& event ) {
             << std::endl;
 }
 
-DEFINE_ART_MODULE(mu2e::Random10);
+DEFINE_ART_MODULE(mu2e::Random10)
