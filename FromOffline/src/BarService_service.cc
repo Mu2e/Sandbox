@@ -93,4 +93,4 @@ namespace mu2e {
 
 } // end namespace mu2e
 
-DEFINE_ART_SERVICE(mu2e::BarService);
+DEFINE_ART_SERVICE(mu2e::BarService)

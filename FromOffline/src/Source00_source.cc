@@ -202,4 +202,4 @@ namespace mu2e {
 } // namespace mu2e
 
 typedef art::Source<mu2e::Source00Detail> Source00;
-DEFINE_ART_INPUT_SOURCE(Source00);
+DEFINE_ART_INPUT_SOURCE(Source00)

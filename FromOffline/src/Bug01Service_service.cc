@@ -30,4 +30,4 @@ void  mu2e::Bug01Service::preBeginRun(art::Run const& ) {
   throw cet::exception("FOO") << "Throwing an exception, just because ... "<< "\n";
 }
 
-DEFINE_ART_SERVICE(mu2e::Bug01Service);
+DEFINE_ART_SERVICE(mu2e::Bug01Service)
